@@ -6,12 +6,13 @@ The project aimed to create creative pictures by analyzing input texts and using
 
 # What to do
 
-It is recommended to use a fresh installation of Ubuntu.
+It is recommended to use Ubuntu. Wordpainter is only tested on Ubuntu 14.04.
 
 Install Caffe
   - Make sure your Caffe folder and your wordpainter folder are in the same directory.
   - See the Wiki for installation guides.
   - Make sure to add GPU and cuDNN support if you have the hardware.
+  - cuDNN requires registration with NVIDIA's developers program: https://developer.nvidia.com/cudnn
 
 Add your text files for analyzis in /text_corpus. makewikifiles.py can be used.
 
@@ -19,7 +20,7 @@ Get your personal API keys from Google and Flickr and add them to config.txt, se
 
 Add the paths to your NNs in pathnames.py.
 
-Install any dependencies required.
+Install any dependencies required. There will be several Python libraries.
 
 Remove .example from files that have it and modify them if wanted.
  - The prototxt files in this folder will be copied and used for training og your networks. Many layers have been given new names: 'outnew'. Make sure you use the correct names for the layers in the proceedure file.
